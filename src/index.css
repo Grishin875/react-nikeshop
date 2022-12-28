@@ -1,0 +1,162 @@
+/**CLEAR**/
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  }
+  *,*:before,*:after{
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+  :focus,:active{outline: none;}
+  a:focus,a:active{outline: none;}
+  
+  nav,footer,header,aside{display: block;}
+  
+  html,body{
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  }
+  input,button,textarea{font-family: inherit;}
+  
+  input::-ms-clear{display: none;}
+  button{cursor: pointer;}
+  button::-moz-focus-inner{padding: 0 ; border: 0;}
+  a, a:visited{text-decoration: none;}
+  ul li{list-style:none;}
+  img{vertical-align: top;}
+  
+  h1,h2,h3,h4,h5,h6{font-size:inherit; font-weight: 400;}
+/**-------------------------------------------------------------**/
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header{
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+.left_header_info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1em;
+}
+.logo{
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 10px;
+}
+.left_header{
+  display: flex;
+  justify-content: center;
+  padding-left: 2em;
+}
+.name_shop{
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: black;
+  line-height: 120%;                                
+}
+.boots_shop{
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 0.2rem;
+  line-height: 120%;   
+}
+.right_header{
+  flex-wrap: wrap-reverse;
+  display: flex;
+  align-items: center;
+  float: right;
+  margin-right: 30px;
+}
+.price{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 15px;
+}
+.full_price{
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 5px;
+}
+.full_model_boots{
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
+  line-height: 120%;
+  padding-left: 28px;
+  padding-top: 0.9em;
+}
+.main{
+  border-top: 1px solid rgb(194, 191, 191);
+}
+.card{
+  width: 210px;
+  border-radius: 15px;
+  background-color: rgb(236, 236, 236);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgb(194, 191, 191);
+  display: flex;
+  margin-top: 50px;
+  flex-direction: column;
+}
+.card:hover{
+  transform: translateY(-15px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.781);
+}
+.full_card_block{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+}
+.img_card{
+  border-radius: 15px 15px 0px 0px;
+  width: 100%;
+  height: 250px;
+}
+.price_boots{
+  display: flex;
+  flex-direction: column;
+}
+.info_card{
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+.card_boots_info{
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  padding-top: 10px;
+}
+.price_boots_text{
+  padding-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: gray;
+  font-size: 14px;
+}
+.price_boots{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
