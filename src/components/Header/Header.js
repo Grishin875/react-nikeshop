@@ -1,3 +1,5 @@
+import styleHeader from './header.modules.css'
+
 function Header() {
     return(
         <header>      

@@ -1,0 +1,71 @@
+.favorite{
+    z-index: 1;
+    position: absolute;
+    border-radius: 50px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.card{
+    width: 210px;
+    border-radius: 15px;
+    background-color: rgb(236, 236, 236);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgb(194, 191, 191);
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    
+}
+.card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.781);
+    transition: 0.5s;
+}
+.full_card_block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+.img_card{
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    height: 250px;
+}
+.price_boots{
+    display: flex;
+    flex-direction: column;
+}
+.info_card{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 2px;
+}
+.card_boots_info{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 10px;
+}
+.price_boots_text{
+    padding-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: gray;
+    font-size: 14px;
+}
+.price_boots{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+.bottom_card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  .btn_plus{
+    margin-right: 20px;
+    margin-top: 30px;
+}

@@ -1,61 +1,28 @@
-import Card from "./components/Card";
-import Header from "./components/Header";
+import Card from "./components/Card/Card";
+import Header from "./components/Header/Header";
+import Cart from "./components/Cart";
 
+const boots=[
+  {
+    title:"Nike Dunk Black and White",
+    price:"4999",
+    images:"/assets/img/nike_dunk.jpg"
+  },
+  {
+    title:"Nike Dunk SB Black and White",
+    price:"4999",
+    images:"/assets/img/nike_dunk_sb.jpg"
+  },
+  {
+    title:"Nike air max Tn Plus Blue and Black",
+    price:"5490",
+    images:"/assets/img/nike_air_max_plus.jpg"
+  },
+]
 function App() {
   return (
     <div className="container">
-      <div className="cart_overlay">
-        <div className="wrapper_cart">
-          <h5 className="cart_heading">
-            Корзина товаров:
-          </h5>
-          <div className="cart_items">
-            <div className="private_carts">
-              <div className="private_img_carts">
-                <img src="/assets/img/nike_dunk.jpg" alt="Nike Dunk" className="carts_img" />
-              </div>
-              <div className="private_info_carts">
-                  <h4 className="heading_boots">
-                    Nike Dunk black and white
-                  </h4>
-                  <p className="price_cart">
-                    4999₽
-                  </p>
-              </div>
-              <img src="/assets/icon/btn-remove.svg" alt="remove" className="remove" />
-            </div>
-            <div className="private_carts">
-              <div className="private_img_carts">
-                <img src="/assets/img/nike_dunk.jpg" alt="Nike Dunk" className="carts_img" />
-              </div>
-              <div className="private_info_carts">
-                  <h4 className="heading_boots">
-                    Nike Dunk black and white
-                  </h4>
-                  <p className="price_cart">
-                    4999₽
-                  </p>
-              </div>
-              <img src="/assets/icon/btn-remove.svg" alt="remove" className="remove" />
-            </div>
-          </div>
-          <div className="checkbox">
-            
-          </div>
-          <ul className="block_place_an_order">
-            <li>
-              <p>Итого:</p>
-              <div></div>
-              <p>23490₽</p>
-            </li>
-            <li>
-              <p>Доставка</p>
-              <div></div>
-              <p>1000₽</p>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <Cart/>
       <Header/>
       <div className="main">
         <div className="heading_main">
@@ -68,10 +35,9 @@ function App() {
           </div>
         </div>
         <div className="full_card_block">
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
+            {boots.map((obj)=>(
+              <Card title={obj.title} price={obj.price} images={obj.images}/>
+            ))}
         </div>
       </div>
     </div>
