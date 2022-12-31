@@ -1,6 +1,6 @@
 import styleHeader from './header.modules.css'
 
-function Header() {
+function Header(props) {
     return(
         <header>      
         <div  className="left_header">
@@ -13,7 +13,7 @@ function Header() {
           </div>
         </div>
         <ul className="right_header">
-          <li className="price">   
+          <li className="price" onClick={props.clickCart}>   
             <img width={25} src="/assets/icon/icon_cart.png" alt="cart" className="cart_price" />
             <span className="full_price">1230 рублей</span>     
           </li>

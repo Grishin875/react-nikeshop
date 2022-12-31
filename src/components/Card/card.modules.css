@@ -63,9 +63,21 @@
 .bottom_card{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
-  .btn_plus{
-    margin-right: 20px;
-    margin-top: 30px;
+.btn_plus{
+    margin-right: 15px;
+    margin-top: 25px;
+    width: 32px;
+
+}
+.plus_icon{
+    cursor: pointer;
+}
+.full_info_card_price{
+    margin-left: -130px;
+}
+.btn_plus{
+    position: absolute;
+    right: 0;
 }

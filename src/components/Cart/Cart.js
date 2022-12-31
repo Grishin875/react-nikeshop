@@ -1,10 +1,12 @@
-function Cart() {
+import cartStyle from './cart.modules.css'
+
+function Cart(props) {
     return(
         <div className="cart_overlay">
         <div className="wrapper_cart">
           <h5 className="cart_heading">
             Корзина товаров:
-            <img src="/assets/icon/btn-remove.svg" alt="Close_cart" className="close_cart" />
+            <img onClick={props.closeCart} src="/assets/icon/btn-remove.svg" alt="Close_cart" className="close_cart" />
           </h5>
           <div className="cart_items">
             <div className="private_carts">

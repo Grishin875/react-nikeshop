@@ -1,6 +1,13 @@
-import cardStyle from './card.modules.css'
+import React from 'react';
+import cardStyles from './card.modules.css'
+
 
 function Card (props){
+  const [isAdded, setIsAdded] = React.useState(false);
+
+  const OnclickPlus = () => {
+    setIsAdded(!isAdded );
+  };
     return(
         <div className="card">
             <button className="favorite">
@@ -19,9 +26,7 @@ function Card (props){
                     </p>
                   </div>
                   <div className="btn_plus">
-                    <button className="plus_block">
-                      <img src="/assets/icon/plus.svg" alt="Plus" className="plus_icon" />
-                    </button>
+                      <img onClick={OnclickPlus} src={isAdded ? '/assets/icon/btn-checked.svg' : '/assets/icon/plus.svg'} alt="Plus" className="plus_icon" />
                   </div>
                 </div>
               </div>

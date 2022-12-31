@@ -1,8 +1,9 @@
 import Card from "./components/Card/Card";
 import Header from "./components/Header/Header";
-import Cart from "./components/Cart";
+import Cart from "./components/Cart/Cart";
+import React from "react";
 
-const boots=[
+const boots_new=[
   {
     title:"Nike Dunk Black and White",
     price:"4999",
@@ -18,12 +19,15 @@ const boots=[
     price:"5490",
     images:"/assets/img/nike_air_max_plus.jpg"
   },
-]
+];
 function App() {
+  const [cartOpen, setCartOpen] = React.useState(false);
+
+
   return (
     <div className="container">
-      <Cart/>
-      <Header/>
+      {cartOpen ? <Cart closeCart = {() => setCartOpen(false)}/>  : null }
+      <Header clickCart = {() => setCartOpen(true)}  />
       <div className="main">
         <div className="heading_main">
           <div className="block_model_boots">
@@ -35,7 +39,7 @@ function App() {
           </div>
         </div>
         <div className="full_card_block">
-            {boots.map((obj)=>(
+            {boots_new.map((obj)=>(
               <Card title={obj.title} price={obj.price} images={obj.images}/>
             ))}
         </div>
