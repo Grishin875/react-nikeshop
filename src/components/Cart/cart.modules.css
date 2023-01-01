@@ -72,6 +72,7 @@
     width: 10%;
     cursor: pointer;
     margin-left: 25px;
+    margin-top:60px ;
 }
 .cart_items{
     overflow: auto;
