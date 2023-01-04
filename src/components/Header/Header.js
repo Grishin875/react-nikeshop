@@ -12,15 +12,19 @@ function Header(props) {
             <p className="boots_shop">Магазин реплекационных кросовок</p>
           </div>
         </div>
-        <ul className="right_header">
-          <li className="price" onClick={props.clickCart}>   
+        <div className="right_header">
+          <div className="price" onClick={props.clickCart}>   
             <img width={25} src="/assets/icon/icon_cart.png" alt="cart" className="cart_price" />
             <span className="full_price">1230 рублей</span>     
-          </li>
-          <li>
+          </div>
+          <div>
             <img width={25} src="/assets/icon/icon_profile.png" alt="profile" className="profile" />
-          </li>
-        </ul>
+          </div>
+          <div className="regestration">
+            <button className="reg_btn regestration_btn">Регестрация</button>
+            <button className="entrance regestration_btn">Вход</button>
+          </div>
+        </div>
       </header>
     );
 }

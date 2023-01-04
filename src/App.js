@@ -5,19 +5,22 @@ import React from "react";
 
 const boots_new=[
   {
-    title:"Nike Dunk Black and White",
+    title:"Nike Dunk ",
     price:"4999",
-    images:"/assets/img/nike_dunk.jpg"
+    images:"/assets/img/nike_dunk.jpg",
+    color:"Black and White"
   },
   {
-    title:"Nike Dunk SB Black and White",
+    title:"Nike Dunk SB ",
     price:"4999",
-    images:"/assets/img/nike_dunk_sb.jpg"
+    images:"/assets/img/nike_dunk_sb.jpg",
+    color:"Black and White"
   },
   {
-    title:"Nike air max Tn Plus Blue and Black",
+    title:"Nike air max Tn Plus ",
     price:"5490",
-    images:"/assets/img/nike_air_max_plus.jpg"
+    images:"/assets/img/nike_air_max_plus.jpg",
+    color:"Blue and Black"
   },
 ];
 function App() {
@@ -40,7 +43,7 @@ function App() {
         </div>
         <div className="full_card_block">
             {boots_new.map((obj)=>(
-              <Card title={obj.title} price={obj.price} images={obj.images}/>
+              <Card title={obj.title} price={obj.price} images={obj.images} color={obj.color}/>
             ))}
         </div>
       </div>

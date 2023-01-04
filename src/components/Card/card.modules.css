@@ -4,6 +4,7 @@
     border-radius: 50px;
     margin-left: 5px;
     margin-top: 5px;
+    
 }
 .card{
     width: 210px;
@@ -43,22 +44,22 @@
 }
 .card_boots_info{
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
     padding-top: 10px;
+    line-height: 120%;
 }
 .price_boots_text{
-    padding-top: 20px;
     font-family: 'Poppins', sans-serif;
     color: gray;
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: 500;
 }
 .price_boots{
     font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 18px;
-    padding-top: 5px;
-    padding-bottom: 15px;
+    margin-left: 5px;
 }
 .bottom_card{
     display: flex;
@@ -66,9 +67,10 @@
     justify-content: center;
 }
 .btn_plus{
-    margin-right: 15px;
+    margin-right: 5px;
     margin-top: 25px;
     width: 32px;
+    margin-bottom: 20px;
 
 }
 .plus_icon{
@@ -80,4 +82,19 @@
 .btn_plus{
     position: absolute;
     right: 0;
+}
+.full_info_card_price{
+    display: flex;
+    justify-content: center;
+    margin-left: -85px;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.color_boots{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 120%;
+    padding-top: 3px;
 }
